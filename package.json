@@ -1,0 +1,54 @@
+{
+  "name": "@augmentedjs/clean-start",
+  "version": "1.0.0",
+  "description": "A simple clean webpack 4, babel 7, sass, css, and externalized stylesheet project setup for use",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "clear && webpack --mode development",
+    "build": "clear && webpack --mode production",
+    "clean": "rm -rf node_modules",
+    "test": "mocha --compilers js:@babel/register --require test/helper.js -c test/*Spec.js",
+    "reinstall": "npm run clean && npm install",
+    "rebuild": "npm run clean && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Augmentedjs/clean-start.git"
+  },
+  "keywords": [
+    "setup",
+    "webpack",
+    "babel",
+    "mocha",
+    "chai",
+    "sass",
+    "css"
+  ],
+  "author": "Bob Warren <jedi.master@augmentedjs.com> (http://www.augmentedjs.com)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Augmentedjs/clean-start/issues"
+  },
+  "homepage": "https://github.com/Augmentedjs/clean-start#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "chai": "^4.2.0",
+    "clean-webpack-plugin": "^1.0.0",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "jsdom": "^13.1.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "mocha": "^5.2.0",
+    "node-sass": "^4.11.0",
+    "sass": "^1.15.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {}
+}
