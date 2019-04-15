@@ -30,7 +30,7 @@
     "url": "https://github.com/Augmentedjs/clean-start/issues"
   },
   "bin": {
-    "create-augmented-app": "./bin/caa.js"
+    "clean-start": "./bin/cs.js"
   },
   "preferGlobal": true,
   "homepage": "https://github.com/Augmentedjs/clean-start#readme",

@@ -7,7 +7,7 @@ const { exec } = require("child_process");
 
 const packageJson = require("../package.json");
 
-const scripts = `"start": "node ./service/index.js",
+const scripts = `
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "test": "mocha --require @babel/register --require test/helper.js -c test/*Spec.js",
@@ -64,7 +64,7 @@ exec(
     // npm will remove the .gitignore file when the package is installed, therefore it cannot be copied
     // locally and needs to be downloaded. See https://github.com/Kornil/simple-react-app/issues/12
     https.get(
-      "https://raw.githubusercontent.com/Augmentedjs/create-augmented-app/master/.gitignore",
+      "https://raw.githubusercontent.com/Augmentedjs/clean-start/master/.gitignore",
       (res) => {
         res.setEncoding("utf8");
         let body = "";
