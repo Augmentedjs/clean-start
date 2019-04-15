@@ -1,6 +1,6 @@
 {
   "name": "clean-start",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple clean webpack 4, babel 7, sass, css, and externalized stylesheet project setup for use",
   "main": "src/index.js",
   "scripts": {
