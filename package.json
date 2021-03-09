@@ -1,6 +1,6 @@
 {
   "name": "clean-start",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A simple clean webpack 5, babel 8, sass, css, and externalized stylesheet project setup for use",
   "main": "src/index.js",
   "scripts": {
@@ -34,6 +34,7 @@
   },
   "preferGlobal": true,
   "homepage": "https://github.com/Augmentedjs/clean-start#readme",
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
