@@ -1,5 +1,5 @@
 # clean-start
-A simple clean webpack 4, babel 7, sass, css, and externalized stylesheet project setup for use.
+A simple clean webpack 5, babel 8, sass, css, and externalized stylesheet project setup for use.
 
 `npx clean-start app-name` to create a base webpack/babel/sass setup into `app-name` folder.
 
@@ -7,8 +7,8 @@ A simple clean webpack 4, babel 7, sass, css, and externalized stylesheet projec
 ## Basic setup
 This project is a preconfigured setup for the common modern toolchains.  Every tutorial assumes React or some other tools that not everyone uses.  This config will only config the following libraries and tools:
 
-* Webpack 4
-* Babel 7
+* Webpack 5 
+* Babel 8
 * SASS
 * Mocha
   - chai
