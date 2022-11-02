@@ -13,7 +13,7 @@ const scripts = `"dev": "webpack --mode development",
     "clean": "rm -rf node_modules",
     "reinstall": "npm run clean && npm install",
     "rebuild": "npm run clean && npm install && npm run build",
-    "start:dev": "webpack-dev-server"`;
+    "start:dev": "webpack serve --mode development"`;
 
 const license = `"license": "Apache-2.0"`;
 
@@ -44,7 +44,7 @@ const getDeps = deps =>
     // exclude the plugin only used in this file, nor relevant to the boilerplate
     .replace(/fs-extra[^\s]+/g, "");
 
-console.info("Initializing project..");
+console.info("Initializing project...");
 
 // create folder and initialize npm
 exec(
